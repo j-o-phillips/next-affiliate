@@ -1,4 +1,4 @@
-const GpuCompare = () => {
+const CpuCompare = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       Page under construction
@@ -6,4 +6,4 @@ const GpuCompare = () => {
   );
 };
 
-export default GpuCompare;
+export default CpuCompare;

@@ -1,20 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
+  const pathName = usePathname();
+
   return (
     <div
-      className="
-      bg-neutral-600 
-      
+      className={`
+     
         w-full 
         z-10 
         flex 
         justify-between 
         px-4 
         py-3
-        text-white "
+        text-white 
+        ${pathName === "/" ? "fixed" : "bg-neutral-600"}
+      `}
     >
       <div>
         <Link href="/">Chip Compare</Link>
